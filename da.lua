@@ -1,4 +1,5 @@
 -- Dormant Aimbot with debug logs
+
 local ui_main_enable = Menu.Switch("Main", "Dormant Aimbot", false, "Bind this to a key")
 local ui_main_debug = Menu.Switch("Main", "Debug", false, "Debug logs")
 
