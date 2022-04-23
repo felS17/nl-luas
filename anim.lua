@@ -1,8 +1,8 @@
 -- Perfect anim breaker for nvl
 
 local fakelag_limit = Menu.FindVar("Aimbot", "Anti Aim", "Fake Lag", "Limit")
-local Menu_MultiCum = Menu.MultiCombo
-local i_like_cocks = Menu_MultiCum("Main","Custom animations", {"Static legs in air", "Pitch 0 on land", "Backwards legs" },0,"")
+local Menu_Multi = Menu.MultiCombo
+local god = Menu_Multi("main","custom anims", {"static legs in air", "pitch 0 on land", "backwards legs" },0,"")
 local animation_breaker,ffi_handler = {}, {}
 local m_iGroundTicks, m_flEndTime = 1, 0
 local m_bOnLand = false
@@ -99,18 +99,18 @@ animation_breaker.handle_prediction = function(cmd)
         return
     end
 
-    if i_like_cocks:Get(1) then 
+    if god:Get(1) then 
         animation_breaker.set_params(local_player, 6, 1, 1 -0.1)
     else 
         animation_breaker.set_params(local_player, 6, 0, 0 -0.1)
     end
-    if i_like_cocks:Get(2) then 
+    if god:Get(2) then 
         if m_bOnLand then
             animation_breaker.set_params(local_player, 12, -12, -12 -0.1)
         end
     end
 
-    if i_like_cocks:Get(3) then 
+    if god:Get(3) then 
         animation_breaker.set_params(local_player, 0, 1, 1 -0.1)
     end
 
