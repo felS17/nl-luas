@@ -1,6 +1,6 @@
--- Cool local server mask changer for nvl
+-- cool local server mask changer for nvl
 
-local list_names = 
+local list_names = # mask names #
 {
     'Dallas',
     'Battle Mask', 
@@ -26,7 +26,7 @@ local list_names =
 
 local masks = Menu.Combo("Mask Changer","Mask Changer", list_names, 0)
 
-local filepath = 
+local filepath = # paths #
 {
     'player/holiday/facemasks/facemask_dallas',
     'player/holiday/facemasks/facemask_battlemask', 
@@ -49,7 +49,7 @@ local filepath =
     'player/holiday/facemasks/facemask_wolf', 
     'player/holiday/facemasks/porcelain_doll',
 }
-local names = 
+local names = # masks names #
 {
     'facemask_dallas',
     'facemask_battlemask', 
@@ -71,8 +71,8 @@ local names =
     'facemask_template', 
     'facemask_wolf', 
     'porcelain_doll',
-}
-local s = 0
+} 
+local s = 0 # dropdown menu #
 local a = 0
 local cache = 0
 local mask_cache = 0
